@@ -1,0 +1,113 @@
+@import url(reset.css);
+#wrapper{
+	width: 1000px;
+	height: 900px;
+}
+#wrapper, #header, #content, #slider, #footre{
+	margin: 0 auto;
+}
+#header, #content, #slider, #footre, #line{
+	width: 801px;
+}
+/* Начало блока header*/
+#header{
+	height: 288px;
+	background: url("../images/header.jpg") no-repeat;
+	position: relative;
+}
+#logo{
+	width: 232px;
+	height: 98px;
+	background: url("../images/logo.png") no-repeat;
+	position: absolute;
+	top: 21px;
+	left: 20px;
+	z-index: 2;
+}
+#logo>a{
+	height: 98px;
+	display: block;
+	cursor: pointer;
+}
+#line{
+	height: 98px;
+	background: #fff;
+	opacity: 0.81;
+	/*2-й вариант
+	background:  rgba(255,255,255,.8);
+   */
+	position: absolute;
+	top: 21px;
+	z-index: 1;
+	text-align: right;
+}
+#nav{
+	position: absolute;
+	top: 68px;
+	right: 23px;
+	z-index: 3;
+}
+#nav li{
+	float: left;
+	margin: 0 5px;
+}
+#nav li.color{
+	color: #c9ce6e;
+}
+#nav li a{
+	text-decoration: none;
+	color: #3a230d;
+	font: 12px Georgia, serif;
+}
+#nav li a:link{
+	color: #3a230d;
+}
+#nav li a:hover{
+	color: #A6230D;
+}
+/* Конец блока header*/
+/* Начало блока content*/
+#content{
+	height: 340px;
+	padding: 46px 0 32px 0;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+#content h1{
+	color: #3a230d;
+	font: 42px Georgia, serif;
+	margin: 0 0 32px 11px;
+}
+#content p{
+	color: #070707;
+	font: 12px Georgia, serif;
+	line-height: 18px;
+	margin: 0 0 24px 11px;
+}
+/* Конец серого блока content*/
+/* Начало блока slider*/
+#slider{
+	height: 135px;
+}
+#slider img{
+	margin-right: 2px;
+	float: left;
+}
+#slider img:nth-last-child(1){
+	margin-right: 0;
+}
+/* Конец серого блока slider*/
+/* Начало блока footre*/
+#footre{
+	height: 26px;
+	margin-top: 6px;
+	background: #000;
+}
+#footre p{
+	font: 10px Georgia, serif;
+	color: #ffffff;
+	text-align: right;
+	padding: 5px 10px 0 0;
+}
+/* Конец серого блока footre*/
